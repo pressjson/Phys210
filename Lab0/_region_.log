@@ -1,0 +1,142 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.8.20)  21 AUG 2024 18:10
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**\nonstopmode\nofiles\PassOptionsToPackage{active,tightpage,auctex}{preview}\AtBeginDocument{\ifx\ifPreview\undefined\RequirePackage[displaymath,floats,graphics,textmath,sections,footnotes]{preview}[2004/11/05]\fi} \input \detokenize{ _region_.tex }
+(./_region_.tex  !name(Lab0.tex) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count185
+\l__pdf_internal_box=\box51
+)
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+
+./_region_.tex:4: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \begin{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(/home/json/.emacs.d/.local/straight/build-29.4/auctex/latex/preview.sty
+Package: preview 2024/06/30 14.0.6 (AUCTeX/preview-latex)
+ (/home/json/.emacs.d/.local/straight/build-29.4/auctex/latex/prtightpage.def
+\PreviewBorder=\dimen140
+) (/home/json/.emacs.d/.local/straight/build-29.4/auctex/latex/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count186
+\hfuzz=\dimen141
+(/home/json/.emacs.d/.local/straight/build-29.4/auctex/latex/prauctex.cfg)) (/home/json/.emacs.d/.local/straight/build-29.4/auctex/latex/prfootnotes.def)
+\pr@snippet=\count187
+\pr@box=\box52
+\pr@output=\toks16
+
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+)  !name(Lab0.tex) !offset(-3) 
+./_region_.tex:9: Undefined control sequence.
+l.9 \maketitle
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./_region_.tex:12: Undefined control sequence.
+l.12 \section
+             {Introduction}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./_region_.tex:16: Preview: Snippet 1 started.
+<-><->
+      
+l.16 ...fect, the volume has to be calculated as $
+                                                  V_{cube}=LHW+\sigma_{v}$, ...
+Not a real error.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 16.
+Preview: Tightpage -32891 -32891 32891 32891
+./_region_.tex:16: Preview: Snippet 1 ended.(447828+98303x5552896).
+<-><->
+      
+l.16 ...be calculated as $V_{cube}=LHW+\sigma_{v}$
+                                                  , where $\sigma_{v}$ is th...
+Not a real error.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+./_region_.tex:16: Preview: Snippet 2 started.
+<-><->
+      
+l.16 ...ated as $V_{cube}=LHW+\sigma_{v}$, where $
+                                                  \sigma_{v}$ is the error p...
+Not a real error.
+
+./_region_.tex:16: Preview: Snippet 2 ended.(282168+98303x685855).
+<-><->
+      
+l.16 ...{cube}=LHW+\sigma_{v}$, where $\sigma_{v}$
+                                                   is the error propagation.
+Not a real error.
+
+[2]
+
+./_region_.tex:18: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 423 strings out of 477985
+ 8981 string characters out of 5839370
+ 1850388 words of memory out of 6000000
+ 20699 multiletter control sequences out of 15000+600000
+ 512287 words of font info for 32 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 46i,5n,54p,539b,88s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on _region_.pdf (2 pages, 27355 bytes).
+PDF statistics:
+ 26 PDF objects out of 1000 (max. 8388607)
+ 15 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

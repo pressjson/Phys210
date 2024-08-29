@@ -127,11 +127,15 @@ This result is surprising. Our group expected this to have the smallest total er
 
 #+CAPTION: Error propagation for the Drop Box experiment
 #+NAME: table:dropbox-error
+|-------------------+---------|
+| /                 |       < |
 | $\sigma_h$        |  0.0707 |
 | $\sigma_{h,sys}$  |    0.05 |
 | $sigma_{h,stat}$  |       0 |
 | $\sigma_{h,res}$  |    0.05 |
+|-------------------+---------|
 | $\sigma_t$        |  0.0694 |
 | $\sigma_{t,sys}$  |  0.0667 |
 | $\sigma_{t,stat}$ | 0.00980 |
-| $\sigma_{t,res}$  | 0.0167  |
+| $\sigma_{t,res}$  |  0.0167 |
+|-------------------+---------|

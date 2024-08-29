@@ -1,4 +1,4 @@
-% Created 2024-08-28 Wed 20:24
+% Created 2024-08-29 Thu 15:38
 % Intended LaTeX compiler: pdflatex
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
@@ -30,7 +30,7 @@
 
 \end{abstract}
 \section{Introduction}
-\label{sec:org588762c}
+\label{sec:orgc815741}
 
 The aim of this lab is to measure the acceleration of an object in free fall due to the gravitational force of Earth. In order to measure the acceleration due to gravity, two tests were performed: dropping a metal ball from a Drop Box and timing and measuring the distance it fell; and dropping a tennis ball from a balcony and timing the distance it fell.
 
@@ -45,7 +45,7 @@ Kinematics can describe the distance an object travels with constant acceleratio
 
 Using this formula, a distance \(h\) and time \(t\) for the object to fall that distance is all that is requried to determine the acceleration due to gravity.
 \section{Methods}
-\label{sec:orgb50ac4f}
+\label{sec:org8f11065}
 
 To minimize error, two experiments were performed: dropping a steel ball from a Drop Box in the lab; and dropping a tennis ball from a balcony.
 
@@ -75,10 +75,10 @@ Since the outdoors are less controlled, ten measurements were taken instead of f
 
 Note: the figures are \emph{not} to scale.
 \section{Results}
-\label{sec:org118d754}
+\label{sec:org253cc42}
 
 \subsection{Drop Box}
-\label{sec:orge334dd9}
+\label{sec:orgff03c75}
 
 These are the results from the Drop Box experiment.
 
@@ -99,7 +99,7 @@ Average & 105.90 & 0.505\\
 
 The calculated result of \(g\) using the averages is \(8.3\pm2.3 \frac{\text{m}}{\text{s}^{2}}\).
 \subsection{Balcony}
-\label{sec:orge43ca36}
+\label{sec:org20ca5a3}
 
 These are the results from the balcony experiment.
 
@@ -127,11 +127,11 @@ The calculated result of \(g\) using the averages is \(10.4\pm 0.728 \frac{\text
 
 All of the calculated results contain the true value of \(g = 9.81 \frac{\text{m}}{\text{s}^{2}}\) within the calculated error propagation.
 \section{Discussion}
-\label{sec:org0689cd2}
+\label{sec:org0d1f0c8}
 
 Ultimately, the purpose of this lab was to calculate the value of \(g\). The value of \(g\) was obtained in both experiments. However, there is a good amount of error.
 \subsection{Calculating error}
-\label{sec:orgcdaf297}
+\label{sec:org7d98e2e}
 
 Error was calculated using the standard formula for error propagation \(\sigma\): \(\sigma = \sqrt{\sum_{L} \frac{\partial g}{\partial L}^{2}\sigma_{L}^{2}}\) for all measurements \(L\), and \(\sigma_{L}=\sqrt{\sigma_{sys,L}^{2}+\sigma_{res,L}^{2}+\sigma_{stat,L}^{2}}\). Since there are two measurements, height and time, the formula for error propagation is \(\sigma = \sqrt{ \left( \frac{2}{t^{2}} \right) ^{2} \sigma_{h}^{2} + \left( \frac{-4h}{t^{3}} \right)^{2}\sigma_{t}^{2} }\).
 
@@ -143,22 +143,25 @@ Systematic error is the amount of vairability between measurements. For the dist
 
 Statistical error is the amount of variability by external factors, such as wind. To account for this vairability, we use the estimate for standard error \(\sigma_{sys} = \frac{\sigma}{\sqrt{n}}\), where \(\sigma\) is the standard deviation of the measurements and \(n\) is the number of measurements.
 \subsection{Drop Box error}
-\label{sec:orgaa09350}
+\label{sec:org92c71c2}
 
 This result is surprising. Our group expected this to have the smallest total error, but instead it had the largest total error. Here is the calculated error propagation:
 
 \begin{table}[htbp]
 \caption{\label{table:dropbox-error}Error propagation for the Drop Box experiment}
 \centering
-\begin{tabular}{lr}
+\begin{tabular}{l|r}
+\hline
 \(\sigma_h\) & 0.0707\\
 \(\sigma_{h,sys}\) & 0.05\\
 \(sigma_{h,stat}\) & 0\\
 \(\sigma_{h,res}\) & 0.05\\
+\hline
 \(\sigma_t\) & 0.0694\\
 \(\sigma_{t,sys}\) & 0.0667\\
 \(\sigma_{t,stat}\) & 0.00980\\
 \(\sigma_{t,res}\) & 0.0167\\
+\hline
 \end{tabular}
 \end{table}
 \end{document}

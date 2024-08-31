@@ -1,0 +1,5 @@
+#+TITLE: README
+
+This is my lab report repo for Physics 210. I push all of my lab reports here after finishing a session of working on them. It makes it easier for me to collaborate with people this way. If somebody wants to see what I did for this part of the lab report, I can simply send them a Github link rather than having to struggle with Linux-iOS compatibility issues (yes, I know things like Google Drive exist, but I'm lazy).
+
+Plus, this allows me to work on files on my laptop and my PC, so I am not forced to work only at my PC.

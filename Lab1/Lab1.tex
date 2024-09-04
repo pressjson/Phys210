@@ -1,4 +1,4 @@
-% Created 2024-08-31 Sat 15:22
+% Created 2024-09-03 Tue 23:37
 % Intended LaTeX compiler: pdflatex
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
@@ -32,7 +32,7 @@
 In this lab, we obtained an experimental value of the acceleration of an object due to the gravitational force of the Earth by dropping balls. We performed two experiments: one with a Drop Box in a lab, and another dropping tennis balls off a balcony. By measuring the height and time of the drop, the we calculated the acceleration on the ball due to gravity. We obtained a value of \(g\) that contains the true value of \(g\) within the error propagation in both experiments:  \(8.3\pm2.3 \frac{\text{m}}{\text{s}^{2}}\) for the Drop Box experiment; and \(10.4\pm 0.728 \frac{\text{m}}{\text{s}^{2}}\) for the balcony experiment.
 \end{abstract}
 \section{Introduction}
-\label{sec:org3b5bb02}
+\label{sec:org09312ae}
 
 The aim of this lab is to measure the acceleration of an object in free fall due to the gravitational force of Earth. In order to measure the acceleration due to gravity, we performed two tests: dropping a metal ball from a Drop Box and timing and measuring the distance it fell; and dropping a tennis ball from a balcony and timing the distance it fell.
 
@@ -47,7 +47,7 @@ Kinematics can describe the distance an object travels with constant acceleratio
 
 Using this formula, the acceleration due to gravity can be calculated with a distance \(h\) and time \(t\).
 \section{Methods}
-\label{sec:org9ff6f2c}
+\label{sec:org1a14315}
 
 To minimize error, we performed two experiments: dropping a steel ball from a Drop Box in the lab; and dropping a tennis ball from a balcony.
 
@@ -77,10 +77,10 @@ Since the outdoors are less controlled, we performed ten trials instead of five.
 
 Note: the figures are \emph{not} to scale.
 \section{Results}
-\label{sec:org31dff56}
+\label{sec:orgfd4685d}
 
 \subsection{Drop Box}
-\label{sec:orgd6a2643}
+\label{sec:org5d21adf}
 
 These are the results from the Drop Box experiment.
 
@@ -102,7 +102,7 @@ Average & 105.90 & 0.505\\
 
 The calculated result of \(g\) using the averages is \(8.3\pm2.3 \frac{\text{m}}{\text{s}^{2}}\).
 \subsection{Balcony}
-\label{sec:orgdd98e67}
+\label{sec:orgbbf327e}
 
 These are the results from the balcony experiment.
 
@@ -131,11 +131,11 @@ The calculated result of \(g\) using the averages is \(10.4\pm 0.728 \frac{\text
 
 All of the calculated results contain the true value of \(g = 9.81 \frac{\text{m}}{\text{s}^{2}}\) within the calculated error propagation.
 \section{Discussion}
-\label{sec:orgfbdafb0}
+\label{sec:orge9f4c56}
 
 Ultimately, the purpose of this lab was to calculate the value of \(g\). The experimental value of \(g\) contained the true value of \(g\) in both experiments; \(g = 9.81 \frac{\text{m}}{\text{s}^{2}} \in 8.3\pm2.3 \frac{\text{m}}{\text{s}^{2}}\) and \(g = 9.81 \frac{\text{m}}{\text{s}^{2}} \in 10.4\pm 0.728 \frac{\text{m}}{\text{s}^{2}}\). However, there is a good amount of error.
 \subsection{Calculating error}
-\label{sec:org36114d8}
+\label{sec:org6463e07}
 
 We calculated error using the standard formula for error propagation \(\sigma\): \(\sigma = \sqrt{\sum_{L} \frac{\partial g}{\partial L}^{2}\sigma_{L}^{2}}\) for all measurements \(L\), and \(\sigma_{L}=\sqrt{\sigma_{sys,L}^{2}+\sigma_{res,L}^{2}+\sigma_{stat,L}^{2}}\). Since there are two measurements, height and time, the formula for error propagation is \(\sigma = \sqrt{ \left( \frac{2}{t^{2}} \right) ^{2} \sigma_{h}^{2} + \left( \frac{-4h}{t^{3}} \right)^{2}\sigma_{t}^{2} }\).
 
@@ -149,32 +149,32 @@ Statistical error is the amount of variability by external factors, such as wind
 
 For the Drop Box experiment, we only used five drops to minimize the run to run variability since the lab is a controlled environment. However, for the balcony experiment, we used ten drops since there were more sources of systematic error, such as wind, not holding the ball at the perfect height (i.e. moving the ball slightly up or down while bringing it into the dropping position from the balcony ledge).
 \subsection{Drop Box error}
-\label{sec:org4dddd9b}
+\label{sec:orgbb7864e}
 
 This result is surprising. Our group expected this to have the smallest error of the two experiments since it was the most controlled of the two experiments, but instead it had the largest error of the two experiments. Here is the calculated error propagation:
 
 \begin{table}[htbp]
-\caption{\label{dropbox-error}Error propagation for the Drop Box experiment (units omitted for intermediate numbers)}
+\caption{\label{dropbox-error}Error propagation for the Drop Box experiment}
 \centering
-\begin{tabular}{l|r}
+\begin{tabular}{l|l}
 \hline
-\(\sigma_h\) & 0.000707\\
-\(\sigma_{h,sys}\) & 0.0005\\
-\(\sigma_{h,stat}\) & 0\\
-\(\sigma_{h,res}\) & 0.0005\\
+\(\sigma_h\) & 0.000707m\\
+\(\sigma_{h,sys}\) & 0.0005m\\
+\(\sigma_{h,stat}\) & 0m\\
+\(\sigma_{h,res}\) & 0.0005m\\
 \hline
-\(\sigma_t\) & 0.0694\\
-\(\sigma_{t,sys}\) & 0.0667\\
-\(\sigma_{t,stat}\) & 0.00980\\
-\(\sigma_{t,res}\) & 0.0167\\
+\(\sigma_t\) & 0.0694s\\
+\(\sigma_{t,sys}\) & 0.0667s\\
+\(\sigma_{t,stat}\) & 0.00980s\\
+\(\sigma_{t,res}\) & 0.0167s\\
 \hline
-\(\frac{\partial g}{\partial h}\) & 7.842\\
-\(\frac{\partial g}{\partial t}\) & -32.89\\
+\(\frac{\partial g}{\partial h}\) & 7.842s\textsuperscript{-2}\\
+\(\frac{\partial g}{\partial t}\) & -32.89\(\frac{\text{m}}{\text{s}^{3}}\)\\
 \hline
-\(\left(\frac{\partial g}{\partial h}\right)^{2}\sigma_{h}^2\) & 0.00003075\\
-\(\left(\frac{\partial g}{\partial t}\right)^{2}\sigma_{t}^2\) & 5.213\\
+\(\left(\frac{\partial g}{\partial h}\right)^{2}\sigma_{h}^2\) & 0.00003075\(\frac{\text{m}^{2}}{\text{s}^{4}}\)\\
+\(\left(\frac{\partial g}{\partial t}\right)^{2}\sigma_{t}^2\) & 5.213 \(\frac{\text{m}^{2}}{\text{s}^4}\)\\
 \hline
-Error prediction & \(\pm 2.3 \frac{\text{m}}{\text{s}^{2}}\)\\
+Error & \(\pm 2.3 \frac{\text{m}}{\text{s}^{2}}\)\\
 \end{tabular}
 \end{table}
 
@@ -182,29 +182,31 @@ The cause for the large error is the large magnitude of \(\left(\frac{\partial g
 
 Originally, this experiment used a photogate to get an exact time for the ball to drop, but the photogate was out of commission for this lab. If we used the photogate instead of the iPhone camera, \(\sigma_t\) would be smaller.
 \subsection{Balcony error}
-\label{sec:orgaf9e176}
+\label{sec:org77d4c8b}
 
 The amount of error in this lab is about what our group expected. However, there are other factors that did not factor into our calculation of error prediction in this lab.
 
-The big element of error in this lab that we did not account for is air resistance. As the tennis ball falls faster, the amount of drag on the tennis ball increases exponentially. To minimize air resistance, we used the lowest available balcony to allow the ball to fall from a consistent and reasonable height, but not high enough to the point where air resistance becomes a significant factor on the amount of time it takes for the tennis ball to hit the ground. The effect of air resistance would slow the ball down, increasing the time in free fall, which would increase the experimental value of \(g\)
+The big element of error in this lab that we did not account for is air resistance. As the tennis ball falls faster, the amount of drag on the tennis ball increases exponentially. To minimize air resistance, we used the lowest available balcony to allow the ball to fall from a consistent and reasonable height, but not high enough to the point where air resistance becomes a significant factor on the amount of time it takes for the tennis ball to hit the ground. The effect of air resistance would slow the ball down, increasing the time in free fall, which would increase the experimental value of \(g\).
 
 For the tennis ball, this is a significant concern, since the height of the drop is large and the tennis ball is light relative to its size, especially when compared to the metal ball dropped from the Drop Box. Since the tennis ball is light relative to its size, the overall force of gravity acting on the tennis ball is small, so even a small amount of drag starts to have an effect on the acceleration and fall duration. However, even with a drop height of 5.6 meters, the tennis ball did not have enough time to get up to a significant speed where drag becomes significant enough of a force to seriously change the outcome of the experiment.
+
+The calculated value for \(g\) is higher than the actual value of \(g\), suggesting a systematic error in the measurement: either the height is incorrectly measured too high, or the time measurement is too low. The most plausible explanation for this is that the time measurement is too low, meaning the ball was falling for more time than observed in the video. The frame where the ball hits the ground is easy to tell, since that is when the ball changes direction. However, choosing the correct frame for the ball starting its fall is difficult. There was most likely a number of frames that were not accounted for where the ball is in free fall but not moving a noticeable amount, yielding a shorter observed fall time relative to the actual fall time.
 \section{Sample Calculations}
-\label{sec:orgb2a8a22}
+\label{sec:org8752076}
 
-We used a spreadsheet to do our calculations. To find the average of times and distances, we did \texttt{=AVERAGE(A2:A11)} with whatever the start and stop range of the actual cells was (Note that \emph{specifically for the heights in cm} we did \texttt{=AVERAGE(A2:A11)/100} to convert from cm to m). After repeating for time, we found the experimental value of g with \texttt{=A13*2(B13)\textasciicircum{}2}.
+We used a spreadsheet to do our calculations. To find the average of times and distances, we did \texttt{=AVERAGE(A2:A11)} with whatever the start and stop range of the actual cells was (Note that \emph{specifically for the heights in cm} we did \texttt{=AVERAGE(A2:A11)/100} to convert from cm to m). After repeating for time, we found the experimental value of \(g\) with \texttt{=A13*2(B13)\textasciicircum{}2}.
 
-To calculate standard deviation, we did =STDEV(A2:A11). To get \(\sigma_{h,stat}\), we did \texttt{=STDEV(A2:A11)/SQRT(COUNT(A2:A11))}. After manually entering \(\sigma_{h,res}\) and \(\sigma_{h,sys}\), we set \(\sigma_{h}\) \texttt{=SQRT(F6\textasciicircum{}2+F7\textasciicircum{}2+F8\textasciicircum{}2)}. After repeating similar steps for \(\sigma_t\), we obtained the error propagation with \texttt{=SQRT((2/(B13)\textasciicircum{}2)\textasciicircum{}2*F6\textasciicircum{}2+(-4*(A13)/(B13)\textasciicircum{}3)\textasciicircum{}2*I5\textasciicircum{}2)}.
+To calculate standard deviation, we did \texttt{=STDEV(A2:A11)}. To get \(\sigma_{h,stat}\), we performed \texttt{=STDEV(A2:A11)/SQRT(COUNT(A2:A11))}. After manually entering \(\sigma_{h,res}\) and \(\sigma_{h,sys}\), we set \(\sigma_{h}\) \texttt{=SQRT(F6\textasciicircum{}2+F7\textasciicircum{}2+F8\textasciicircum{}2)}. After repeating similar steps for \(\sigma_t\), we obtained the error propagation with \texttt{=SQRT((2/(B13)\textasciicircum{}2)\textasciicircum{}2*F6\textasciicircum{}2+(-4*(A13)/(B13)\textasciicircum{}3)\textasciicircum{}2*I5\textasciicircum{}2)}.
 
-The reason there is more intermediate steps for the Drop Box spreadsheet is to obtain the numbers used in Table \ref{dropbox-error}.
-
-\begin{center}
-\includegraphics[width=6in]{./tennisballspreadsheet.png}
-\captionof{figure}{Balcony experiment spreadsheet}
-\end{center}
+The reason there are more intermediate steps for the Drop Box spreadsheet is to obtain the numbers used in Table \ref{dropbox-error}.
 
 \begin{center}
 \includegraphics[width=6in]{./dropboxspreadsheet.png}
 \captionof{figure}{Drop Box experiment spreadsheet}
+\end{center}
+
+\begin{center}
+\includegraphics[width=6in]{./tennisballspreadsheet.png}
+\captionof{figure}{Balcony experiment spreadsheet}
 \end{center}
 \end{document}

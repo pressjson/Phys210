@@ -130,28 +130,28 @@ For the Drop Box experiment, we only used five drops to minimize the run to run 
 
 This result is surprising. Our group expected this to have the smallest error of the two experiments since it was the most controlled of the two experiments, but instead it had the largest error of the two experiments. Here is the calculated error propagation:
 
-#+CAPTION: Error propagation for the Drop Box experiment (units omitted for intermediate numbers)
+#+CAPTION: Error propagation for the Drop Box experiment
 #+NAME: table:dropbox-error
 #+LABEL: dropbox-error
-|--------------------------------------------------------------+-------------------------------------------|
-| /                                                            |                                         < |
-| $\sigma_h$                                                   |                                  0.000707 |
-| $\sigma_{h,sys}$                                             |                                    0.0005 |
-| $\sigma_{h,stat}$                                            |                                         0 |
-| $\sigma_{h,res}$                                             |                                    0.0005 |
-|--------------------------------------------------------------+-------------------------------------------|
-| $\sigma_t$                                                   |                                    0.0694 |
-| $\sigma_{t,sys}$                                             |                                    0.0667 |
-| $\sigma_{t,stat}$                                            |                                   0.00980 |
-| $\sigma_{t,res}$                                             |                                    0.0167 |
-|--------------------------------------------------------------+-------------------------------------------|
-| $\frac{\partial g}{\partial h}$                              |                                     7.842 |
-| $\frac{\partial g}{\partial t}$                              |                                    -32.89 |
-|--------------------------------------------------------------+-------------------------------------------|
-| $\left(\frac{\partial g}{\partial h}\right)^{2}\sigma_{h}^2$ |                                0.00003075 |
-| $\left(\frac{\partial g}{\partial t}\right)^{2}\sigma_{t}^2$ |                                     5.213 |
-|--------------------------------------------------------------+-------------------------------------------|
-| Error prediction                                             | \(\pm 2.3 \frac{\text{m}}{\text{s}^{2}}\) |
+|--------------------------------------------------------------+--------------------------------------------------|
+| /                                                            | <                                                |
+| $\sigma_h$                                                   | 0.000707m                                        |
+| $\sigma_{h,sys}$                                             | 0.0005m                                          |
+| $\sigma_{h,stat}$                                            | 0m                                               |
+| $\sigma_{h,res}$                                             | 0.0005m                                          |
+|--------------------------------------------------------------+--------------------------------------------------|
+| $\sigma_t$                                                   | 0.0694s                                          |
+| $\sigma_{t,sys}$                                             | 0.0667s                                          |
+| $\sigma_{t,stat}$                                            | 0.00980s                                         |
+| $\sigma_{t,res}$                                             | 0.0167s                                          |
+|--------------------------------------------------------------+--------------------------------------------------|
+| $\frac{\partial g}{\partial h}$                              | 7.842s^{-2}                                      |
+| $\frac{\partial g}{\partial t}$                              | -32.89\( \frac{\text{m}}{\text{s}^{3}}\)         |
+|--------------------------------------------------------------+--------------------------------------------------|
+| $\left(\frac{\partial g}{\partial h}\right)^{2}\sigma_{h}^2$ | 0.00003075\(\frac{\text{m}^{2}}{\text{s}^{4}}\)  |
+| $\left(\frac{\partial g}{\partial t}\right)^{2}\sigma_{t}^2$ | 5.213 \(\frac{\text{m}^{2}}{\text{s}^4} \)       |
+|--------------------------------------------------------------+--------------------------------------------------|
+| Error                                                        | \(\pm 2.3 \frac{\text{m}}{\text{s}^{2}}\)        |
 
 The cause for the large error is the large magnitude of $\left(\frac{\partial g}{\partial t}\right)^{2}\sigma_{t}^2$, suggesting a majority of the error arose in the measurement of time. For future labs, we will use a higher frame rate in video recordings to reduce the amount of error in video recordings: it becomes easier with more frames to identify the frame the ball begins to fall and the frame the ball impacts the ground, leading to an overall smaller $\sigma_{t,sys}$.
 
@@ -161,22 +161,25 @@ Originally, this experiment used a photogate to get an exact time for the ball t
 
 The amount of error in this lab is about what our group expected. However, there are other factors that did not factor into our calculation of error prediction in this lab.
 
-The big element of error in this lab that we did not account for is air resistance. As the tennis ball falls faster, the amount of drag on the tennis ball increases exponentially. To minimize air resistance, we used the lowest available balcony to allow the ball to fall from a consistent and reasonable height, but not high enough to the point where air resistance becomes a significant factor on the amount of time it takes for the tennis ball to hit the ground. The effect of air resistance would slow the ball down, increasing the time in free fall, which would increase the experimental value of $g$
+The big element of error in this lab that we did not account for is air resistance. As the tennis ball falls faster, the amount of drag on the tennis ball increases exponentially. To minimize air resistance, we used the lowest available balcony to allow the ball to fall from a consistent and reasonable height, but not high enough to the point where air resistance becomes a significant factor on the amount of time it takes for the tennis ball to hit the ground. The effect of air resistance would slow the ball down, increasing the time in free fall, which would increase the experimental value of $g$.
 
 For the tennis ball, this is a significant concern, since the height of the drop is large and the tennis ball is light relative to its size, especially when compared to the metal ball dropped from the Drop Box. Since the tennis ball is light relative to its size, the overall force of gravity acting on the tennis ball is small, so even a small amount of drag starts to have an effect on the acceleration and fall duration. However, even with a drop height of 5.6 meters, the tennis ball did not have enough time to get up to a significant speed where drag becomes significant enough of a force to seriously change the outcome of the experiment.
 
+The calculated value for $g$ is higher than the actual value of $g$, suggesting a systematic error in the measurement: either the height is incorrectly measured too high, or the time measurement is too low. The most plausible explanation for this is that the time measurement is too low, meaning the ball was falling for more time than observed in the video. The frame where the ball hits the ground is easy to tell, since that is when the ball changes direction. However, choosing the correct frame for the ball starting its fall is difficult. There was most likely a number of frames that were not accounted for where the ball is in free fall but not moving a noticeable amount, yielding a shorter observed fall time relative to the actual fall time.
+
 * Sample Calculations
 
-We used a spreadsheet to do our calculations. To find the average of times and distances, we did ~=AVERAGE(A2:A11)~ with whatever the start and stop range of the actual cells was (Note that /specifically for the heights in cm/ we did ~=AVERAGE(A2:A11)/100~ to convert from cm to m). After repeating for time, we found the experimental value of g with ~=A13*2(B13)^2~.
+We used a spreadsheet to do our calculations. To find the average of times and distances, we did ~=AVERAGE(A2:A11)~ with whatever the start and stop range of the actual cells was (Note that /specifically for the heights in cm/ we did ~=AVERAGE(A2:A11)/100~ to convert from cm to m). After repeating for time, we found the experimental value of $g$ with ~=A13*2(B13)^2~.
 
-To calculate standard deviation, we did =STDEV(A2:A11). To get $\sigma_{h,stat}$, we did ~=STDEV(A2:A11)/SQRT(COUNT(A2:A11))~. After manually entering $\sigma_{h,res}$ and $\sigma_{h,sys}$, we set $\sigma_{h}$ ~=SQRT(F6^2+F7^2+F8^2)~. After repeating similar steps for $\sigma_t$, we obtained the error propagation with ~=SQRT((2/(B13)^2)^2*F6^2+(-4*(A13)/(B13)^3)^2*I5^2)~.
+To calculate standard deviation, we did ~=STDEV(A2:A11)~. To get $\sigma_{h,stat}$, we performed ~=STDEV(A2:A11)/SQRT(COUNT(A2:A11))~. After manually entering $\sigma_{h,res}$ and $\sigma_{h,sys}$, we set $\sigma_{h}$ ~=SQRT(F6^2+F7^2+F8^2)~. After repeating similar steps for $\sigma_t$, we obtained the error propagation with ~=SQRT((2/(B13)^2)^2*F6^2+(-4*(A13)/(B13)^3)^2*I5^2)~.
 
-The reason there is more intermediate steps for the Drop Box spreadsheet is to obtain the numbers used in Table \ref{dropbox-error}.
+The reason there are more intermediate steps for the Drop Box spreadsheet is to obtain the numbers used in Table \ref{dropbox-error}.
+
+#+CAPTION: Drop Box experiment spreadsheet
+#+ATTR_LATEX: :width 6in :float nil
+[[./dropboxspreadsheet.png]]
 
 #+CAPTION: Balcony experiment spreadsheet
 #+ATTR_LATEX: :width 6in :float nil
 [[./tennisballspreadsheet.png]]
 
-#+CAPTION: Drop Box experiment spreadsheet
-#+ATTR_LATEX: :width 6in :float nil
-[[./dropboxspreadsheet.png]]

@@ -1,4 +1,4 @@
-% Created 2024-09-10 Tue 23:52
+% Created 2024-09-11 Wed 14:39
 % Intended LaTeX compiler: pdflatex
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
@@ -29,21 +29,24 @@
 \begin{ABSTRACT}
 
 
-In this lab, we used a ramp and a track to predict the point of impact of a ball that rolled down said ramp and track, and predicted the
+In this lab, we used a ramp and a track on a table to predict the point of impact of a ball that rolled down said ramp, off said track, and onto the ground. To predict the point of impact, we performed ten trial runs where the ball rolled through a set of photogates located at the end of the track to obtain an initial velocity in the \(x\) direction, but without hitting the ground. We then used that velocity to predict how far the ball would travel off the track before being one cup height above the ground, and placed a cup at that point. When we performed the experiment again in the same manner as in the trial run, this time letting the ball run off the track and off the table, passing through the center of the mouth of the cup, thus landing in the cup.
 \end{ABSTRACT}
 \section{Introduction}
-\label{sec:org393cc0a}
+\label{sec:org9969c38}
 
-The aim of this lab was to have a ball roll off a track and into a cup on the ground. To get the ball rolling, it started from the top of a ramp, rolled down the ramp when released to gather velocity in the \(x\) direction, ran along a track with a pair of photogates to measure the speed along with ensuring the \(y\) component of the velocity was zero, and then rolled off the end of the track to land in a cup on the ground. To know where to place the cup, we calculated the speed of the ball by repeatedly releasing it from the ramp and having it run through a pair of photogates to measure the time. Knowing the time it took for the ball to travel between the photogates \(t_1\), and by measuring the distance between the photogates \(d\), we calculated the average velocity in the \(x\) direction using \(\bar{v}_{x0} = \frac{d}{\bar{t}_{1}}\) using the average time measurement of ten trial runs.
+The aim of this lab was to have a ball roll off a track and into a cup on the ground. To get the ball rolling, it started from the top of a ramp, rolled down the ramp when released to gather velocity in the \(x\) direction, ran along a horizontal track with a pair of photogates to measure the speed, along with ensuring the \(y\) component of the velocity was zero, and then rolled off the end of the track to land in a cup on the ground. To know where to place the cup, we calculated the speed of the ball by repeatedly releasing it from the ramp and having it run through a pair of photogates to measure the time. Knowing the time it took for the ball to travel between the photogates \(t_1\), and by measuring the distance between the photogates \(d\), we calculated the average velocity in the \(x\) direction using \(\bar{v}_{x0} = \frac{d}{\bar{t}_{1}}\) where \(\bar{t}_{1}\) is the average time measurement of ten trial runs.
 
 In order to know where to place the cup, we needed to obtain the time in free fall. To get the time of the ball in free fall, we used the kinematic equation for constant acceleration in the \(y\) direction and solved for the free fall time \(t_{2}\):
 
-
-\begin{align}
-y_{f} = y_{0} + v_{0y}t_{2} + \frac{1}{2} a_{y}t_{2}^{2} \\
-\text{Assume } y_{f} = 0\text{, }y_{0} = h\text{, } v_{0y} = 0\text{, and } a_{y} = -g \\
+\begin{equation}
+y_{f} = y_{0} + v_{0y}t_{2} + \frac{1}{2} a_{y}t_{2}^{2}
+\end{equation}
+\begin{equation}
+\text{Assume } y_{f} = 0\text{, }y_{0} = h\text{, } v_{0y} = 0\text{, and } a_{y} = -g
+\end{equation}
+\begin{equation}
 0 = h - \frac{1}{2} g t_{2}^{2}
-\end{align}
+\end{equation}
 
 This ultimately yields an equation for solving for \(t_2\) using only known quantities:
 
@@ -51,15 +54,15 @@ This ultimately yields an equation for solving for \(t_2\) using only known quan
         t_{2} = \sqrt{\frac{2h}{g}}
 \end{align}
 
-Using a known value for \(t_2\), we can substitute into the distance equation for \(\Delta x\) assuming the ball starts falling at \(x_0 = 0\) with no \(x\) acceleration:
+Using a known value for \(t_2\), we can substitute into the distance equation to solve for \(x_{f}\) assuming the ball starts falling at \(x_0 = 0\) with no \(x\) acceleration:
 
 \begin{equation} \label{xf-eqn}
 x_{f} = \frac{d}{t_{1}}\sqrt{\frac{2h}{g}}
 \end{equation}
 
-Then, we placed a cup \(x_f\) meters away from the table, released the ball from the top of the ramp in the same manner as in the trial runs (the ones to obtain the \(x\) component of the ball's velocity), and witnessed the ball land perfectly in the cup.
+Then, we placed a cup \(x_f\) meters away from the table, released the ball from the top of the ramp in the same manner as in the trial runs (the runs to obtain the \(x\) component of the ball's velocity), and witnessed the ball land perfectly in the cup.
 \section{Methods}
-\label{sec:orgaa4fbb6}
+\label{sec:org8ff81c0}
 
 The main source of uncertainty in this lab was the initial release of the ball onto the ramp to gain acceleration. To minimize the error, we pushed the ball up the back face of the ramp until it started falling on the main side of the ramp. We did this as to impart minimal initial velocity on the ball, so the ball would accelerate for the same amount of time and reach the same end speed.
 
@@ -76,7 +79,7 @@ Here is the experiment setup:
 \captionof{figure}{\label{fig:track}Track setup}
 \end{center}
 \section{Results}
-\label{sec:orgefb2762}
+\label{sec:org4cfcaba}
 
 For all calculations, we assume \(g\) to be 9.81\(\frac{\text{m}}{\text{s}^{2}}\).
 
@@ -123,7 +126,7 @@ Error & 0.0263m\\
 
 When we released the ball, it rolled down the ramp, off the track, and landed in the cup.
 \section{Discussion}
-\label{sec:org7d1481f}
+\label{sec:org4144e5e}
 
 Our ball landed in the cup. The small amount of error reflects that fact.
 
@@ -173,7 +176,7 @@ That source of error is not accounted for in any of the aforementioned measureme
 
 However, in the end, we managed to put a ball in a cup.
 \section{Sample Calculations}
-\label{sec:orgd4621e5}
+\label{sec:orge92c549}
 
 We performed all calculations in a spreadsheet. We recorded the ten trial runs from \texttt{A4:A13}.
 
@@ -185,6 +188,8 @@ SQRT((1/A15*SQRT(2*D2/9.81))^2*H20^2+
     (-A2/A15^2*SQRT(2*D2/9.81))^2*B20^2+
     (A2/2*A15*SQRT(2/9.81*D2))^2*E20^2)
 \end{verbatim}
+
+All of the values are available in Figure \ref{fig:spreadsheet}.
 
 \begin{center}
 \includegraphics[width=6.5in]{./spreadsheet.png}

@@ -1,0 +1,18 @@
+#+title:
+#+author: Jason Press
+
+#+OPTIONS: toc:nil
+
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [12pt]
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry} \usepackage{amsmath}
+
+* Introduction
+
+* Methods
+
+* Results
+
+* Discussion
+
+* Sample Calculations

@@ -1,0 +1,84 @@
+ #+title: Atwood Machines
+#+author: Jason Press
+
+#+OPTIONS: toc:nil
+
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [12pt]
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry} \usepackage{amsmath}
+
+* Introduction
+
+In this lab, we used the Work-Energy Theorem to determine how much energy friction leeched from two different Atwood machine setups. Additionally, we determined the mechanical advantage of the two different Atwood machine setups. The first Atwood machine was the standard one pulley setup, with two masses connected by a pulley. The second Atwood machine was a two pulley setup, with the first mass connected to a second pulley.
+
+To calculate the work done by non-conservative forces (friction), we can use the Work-Energy Theorem to describe how much energy is lost due to friction:
+
+\begin{align*}
+W_{NC} = \Delta K + \Delta U = (K_f - K_i) + (U_f - U_i)
+\end{align*}
+
+Then, assuming the system has no initial kinetic (the system starts at rest) nor potential (an arbitrary choice to make calculations easier, since we can dictate what \(U_i\) is) energy, and using \(\bar{v} = \frac{v_i - v_{f}}{2} = \frac{h}{t} \implies v_f = \frac{2h}{t} \), we get the equation for describing the work done by non-conservative forces in a single pulley Atwood machine:
+
+\begin{align}\label{eq:single}
+W_{NC} = 2 \left( \frac{h}{t} \right)^2 (m_1 + m_2) + g h (m_1 - m_2)
+\end{align}
+
+Similarly, for the two pulley setup, we get the following equation:
+
+\begin{align}\label{eq:double}
+W_{NC} = 2 \left( \frac{h}{t} \right)^2 (m_1 + 4 m_2) + g h (m_1 - 2 m_2)
+\end{align}
+
+To determine the mechanical advantage of a system, simply calculate \(\frac{\text{force out}}{\text{force in}}\).
+
+* Methods
+
+* Results
+
+Here are our results for the single pulley Atwood machine, with 50g on $m_1$ and 54g on $m_2$:
+
+#+CAPTION: Single Pulley Atwood Machine Results
+#+ATTR_LATEX: :float nil
+|   Trial | Height (cm) | Time (s) |
+|---------+-------------+----------|
+|       / |           < |        < |
+|       1 |        36.5 |     1.86 |
+|       2 |        36.5 |     1.88 |
+|       3 |        36.5 |     1.58 |
+|       4 |        36.6 |     1.76 |
+|       5 |        36.6 |     1.83 |
+|       6 |        36.6 |     2.08 |
+|       7 |        36.5 |     1.91 |
+|       8 |        36.6 |     1.94 |
+|       9 |        36.6 |     2.06 |
+|      10 |        36.5 |     1.74 |
+|---------+-------------+----------|
+| Average |       36.55 |    1.864 |
+
+Using Formula \ref{eq:single}, we get \(-0.00634 \pm 0.00206\)J of work due to friction. Additionally, the mechanical advantage of the system was 1: when we put 500g on \(m_1\) and a spring scale on \(m_2\), the spring scale read 500g of force.
+
+Here are our results for the double pulley Atwood machine, with 96.6g on $m_1$ and 80g on $m_2$:
+
+#+CAPTION: Single Pulley Atwood Machine Results
+#+ATTR_LATEX: :float nil
+|   Trial | Height (cm) | Time (s) |
+|---------+-------------+----------|
+|       / |           < |        < |
+|       1 |        38.7 |     1.34 |
+|       2 |        38.6 |     1.56 |
+|       3 |        38.8 |     1.69 |
+|       4 |        38.9 |     1.73 |
+|       5 |        38.6 |     1.41 |
+|       6 |        38.7 |     1.59 |
+|       7 |        38.8 |     1.49 |
+|       8 |        39.1 |     1.63 |
+|       9 |        38.7 |     1.69 |
+|      10 |        38.7 |      1.4 |
+|---------+-------------+----------|
+| Average |       38.76 |    1.553 |
+
+Using Formula \ref{eq:double}, we get \(-0.107 \pm 0.079\)J of work due to friction. Additionally, the mechanical advantage of the system was 2: when we put 500g on \(m_1\) and a spring scale on \(m_2\), the spring scale read 250g of force.
+
+* Discussion
+
+* Sample Calculations

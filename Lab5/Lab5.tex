@@ -1,4 +1,4 @@
-% Created 2024-10-21 Mon 00:24
+% Created 2024-10-21 Mon 00:28
 % Intended LaTeX compiler: pdflatex
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
@@ -32,7 +32,7 @@
 In this lab, we determined the amount of work friction did in two different Atwood machines, along with the mechanical advantage of both Atwood machines. The first Atwood machine we tested was the standard single pulley Atwood machine, with two masses suspended by a string around a pulley. Using the Work-Energy Theorem, we determined that friction did \(-0.00634 \pm 0.00206\)J of work in this system. Using a spring scale, we determined the mechanical advantage of the single pulley to be 1. The second Atwood machine we tested was a double pulley Atwood machine, where the line was attached to the ceiling, then a pulley holding the first mass, then the Atwood pulley, then the second mass. Using the Work-Energy Theorem, we determined that friction did \(-0.107 \pm 0.079\)J of work in this system. Using a spring scale, we determined the mechanical advantage of the system to be 2.
 \end{abstract}
 \section{Introduction}
-\label{sec:org6f9b124}
+\label{sec:orgadc3537}
 
 In this lab, we used the Work-Energy Theorem to determine how much energy friction leeched from two different Atwood machine systems. Additionally, we determined the mechanical advantage of the two different Atwood machine systems. The first Atwood machine was the standard one pulley system, with two masses connected by a pulley. The second Atwood machine was a two pulley system, with the first mass connected to a second pulley.
 
@@ -58,7 +58,7 @@ We assumed all of the work done by non-conservative forces \(W_{NC}\) to be done
 
 To determine the mechanical advantage of a system, we simply evaluated \(\frac{\text{force out}}{\text{force in}}\).
 \section{Methods}
-\label{sec:org4ee3396}
+\label{sec:orge87fa25}
 
 For the single pulley system, we suspended one pulley from a mounting point on the ceiling. Then, we threaded a fishing line through the pulley and attached it to two mass hangers of equal weight (\(w = 50g\)). For the mass we wanted to go down, \(m_2\), we added an additional 4g. We used enough line so that \(m_2\) would make contact with the table, while ensuring there was enough line for \(m_1\) to travel vertically without hitting the pulley.
 
@@ -84,7 +84,7 @@ To obtain the mechanical advantage of the system, we placed a 500g weight on \(m
 \captionof{figure}{Double pulley system}
 \end{center}
 \section{Results}
-\label{sec:org8cb774f}
+\label{sec:orgcf35af2}
 
 Here are our results for the single pulley Atwood machine, with 50g on \(m_1\) and 54g on \(m_2\):
 
@@ -135,7 +135,7 @@ Average & 38.76 & 1.553\\
 
 Using Formula \ref{eq:double}, we get \(-0.107 \pm 0.004\)J of work due to friction. Additionally, the mechanical advantage of the system was 2: when we put 600g on \(m_1\) and a spring scale on \(m_2\), the spring scale read 300g of force.
 \section{Discussion}
-\label{sec:orga096833}
+\label{sec:org4358766}
 
 To determine the error, we used the standard formula for error prorogation in a system to obtain the error for the single pulley system:
 
@@ -149,7 +149,7 @@ And derived a similar equation for the two pulley system:
 \sigma^2 = \left( \frac{(-4 h^2 (m_1 + 4 m_2))}{t^3} \right) ^2 \sigma_t^2 + \left( g (m_1 - 2 m_2) + \frac{(4 h (m[1] + 4 m[2]))}{t^2} \right)^2 \sigma_h^2
 \end{align}
 
-And \(\sigma_h\) and \(sigma_t\) in each system is the square root of the sum of squares of their respective statistical systematic, and resolution errors.
+And \(\sigma_h\) and \(\sigma_t\) in each system is the square root of the sum of squares of their respective statistical systematic, and resolution errors.
 
 The overall amount of work done by friction was small. In the single pulley system, \(m_1\) did -0.175J of work, while \(m_2\) did 0.200J of work (\(m_1\) did negative work because it was opposing gravity). Relative to the absolute amount of work done by both masses, friction did not perform a lot of work. Similarly, in the double pulley system, \(m_1\) did -0.180J of work, while \(m_2\) did 0.314J of work. Relative to the absolute amount of work done by both masses, friction did not perform a lot of work. However, friction did more relative work in the second system. This was observed with more squeaking noises and a rougher descent of the masses throughout the trials.
 
@@ -159,9 +159,9 @@ The mechanical advantage of the single pulley system being 1 makes sense, since 
 
 This is also observed with how much work both masses do in the second system. By Newton's Second Law, both pulleys experience the same amount of force. However, since \(m_1\) travels half the distance that \(m_2\) travels, \(m_1\) does roughly half of the amount of work that \(m_2\) does (it's not exactly half, since some work is lost due to friction).
 \section{Sample Calculations}
-\label{sec:orge707679}
+\label{sec:org17256c8}
 
-We used a spreadsheet for our calculations. To get the average of a column of observations, we used \texttt{=AVERAGE(C2:C11)}. Since we measured \(h\) in cm, and our equations use m, we converted h into m in its own column. To get the work done by friction in a system, we used \texttt{=2*(C13/D12)\textasciicircum{}2*(B4+A4)+9.81*C13*(B4-A4)}. To get the statistical error, we used \texttt{=sqrt(stdev(F2:F11)/10)}. To get the error of a measurement, we used \texttt{=sqrt(C20\textasciicircum{}2+C19\textasciicircum{}2+C18\textasciicircum{}2)}. To get the errors, we broke down each error equation into its components:
+We used a spreadsheet for our calculations. To get the average of a column of observations, we used \texttt{=AVERAGE(C2:C11)}. Since we measured \(h\) in centimeters, and our equations use meters, we converted \(h\) into meters in its own column. To get the work done by friction in a system, we used \texttt{=2*(C13/D12)\textasciicircum{}2*(B4+A4)+9.81*C13*(B4-A4)}. To get the statistical error, we used \texttt{=sqrt(stdev(F2:F11)/10)}. To get the error of a measurement, we used \texttt{=sqrt(C20\textasciicircum{}2+C19\textasciicircum{}2+C18\textasciicircum{}2)}. To get the errors, we broke down each error equation into its components:
 
 \begin{itemize}
 \item \verb|=(4*C13/D12^2*(A4+B4)+9.81*(B4-A4))^2*C21^2| for \(\frac{\partial W}{\partial h}^2 \sigma_h^{2}\) and

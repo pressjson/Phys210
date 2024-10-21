@@ -124,7 +124,7 @@ And derived a similar equation for the two pulley system:
 \sigma^2 = \left( \frac{(-4 h^2 (m_1 + 4 m_2))}{t^3} \right) ^2 \sigma_t^2 + \left( g (m_1 - 2 m_2) + \frac{(4 h (m[1] + 4 m[2]))}{t^2} \right)^2 \sigma_h^2
 \end{align}
 
-And \(\sigma_h\) and \(sigma_t\) in each system is the square root of the sum of squares of their respective statistical systematic, and resolution errors.
+And \(\sigma_h\) and \(\sigma_t\) in each system is the square root of the sum of squares of their respective statistical systematic, and resolution errors.
 
 The overall amount of work done by friction was small. In the single pulley system, $m_1$ did -0.175J of work, while $m_2$ did 0.200J of work ($m_1$ did negative work because it was opposing gravity). Relative to the absolute amount of work done by both masses, friction did not perform a lot of work. Similarly, in the double pulley system, $m_1$ did -0.180J of work, while $m_2$ did 0.314J of work. Relative to the absolute amount of work done by both masses, friction did not perform a lot of work. However, friction did more relative work in the second system. This was observed with more squeaking noises and a rougher descent of the masses throughout the trials.
 
@@ -136,7 +136,7 @@ This is also observed with how much work both masses do in the second system. By
 
 * Sample Calculations
 
-We used a spreadsheet for our calculations. To get the average of a column of observations, we used ~=AVERAGE(C2:C11)~. Since we measured $h$ in cm, and our equations use m, we converted h into m in its own column. To get the work done by friction in a system, we used ~=2*(C13/D12)^2*(B4+A4)+9.81*C13*(B4-A4)~. To get the statistical error, we used ~=sqrt(stdev(F2:F11)/10)~. To get the error of a measurement, we used ~=sqrt(C20^2+C19^2+C18^2)~. To get the errors, we broke down each error equation into its components:
+We used a spreadsheet for our calculations. To get the average of a column of observations, we used ~=AVERAGE(C2:C11)~. Since we measured $h$ in centimeters, and our equations use meters, we converted $h$ into meters in its own column. To get the work done by friction in a system, we used ~=2*(C13/D12)^2*(B4+A4)+9.81*C13*(B4-A4)~. To get the statistical error, we used ~=sqrt(stdev(F2:F11)/10)~. To get the error of a measurement, we used ~=sqrt(C20^2+C19^2+C18^2)~. To get the errors, we broke down each error equation into its components:
 
 \begin{itemize}
 \item \verb|=(4*C13/D12^2*(A4+B4)+9.81*(B4-A4))^2*C21^2| for \(\frac{\partial W}{\partial h}^2 \sigma_h^{2}\) and
